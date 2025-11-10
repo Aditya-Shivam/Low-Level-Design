@@ -1,8 +1,8 @@
 package CommonEnums;
 
 public enum ItemType {
-    Coke,
-    Pepsi,
-    Juice,
-    Soda
+    COKE,
+    PEPSI,
+    JUICE,
+    SODA
 }
