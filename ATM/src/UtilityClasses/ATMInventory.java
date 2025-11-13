@@ -37,7 +37,7 @@ public class ATMInventory {
     }
 
     // Dispense cash for withdrawal
-    Map<CashType,Integer> dispenseCash(int amount){
+    public Map<CashType,Integer> dispenseCash(int amount){
         if(!hasSufficientCash(amount)) return null;
         Map<CashType,Integer> dispensedCash = new HashMap<>();
         for(CashType cashType : CashType.values()){

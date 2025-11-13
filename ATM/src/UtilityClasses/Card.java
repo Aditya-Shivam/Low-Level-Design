@@ -5,7 +5,7 @@ public class Card {
     private int pin;
     private String accountNumber;
 
-    public Card(String accountNumber, String cardNumber, int pin) {
+    public Card(String cardNumber, int pin, String accountNumber) {
         this.accountNumber = accountNumber;
         this.cardNumber = cardNumber;
         this.pin = pin;
@@ -33,5 +33,9 @@ public class Card {
 
     public void setPin(int pin) {
         this.pin = pin;
+    }
+
+    public boolean validatePin(int pin) {
+        return this.pin == pin;
     }
 }
